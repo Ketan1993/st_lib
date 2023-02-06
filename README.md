@@ -1,2 +1,3 @@
-# st_lib
-this is personal repository for desing own driver for stm32 micro-controller.
+# Library
+This repository is maintain by the individual user, doesn't belog to any private or publick sector. This repository desing for tracking information for the software or library.
+	
