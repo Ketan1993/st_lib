@@ -1,4 +1,5 @@
 #include "st_uart_bus.h"
+#include "st_async_uart.h"
 
 //forward declaration for API.
 st_bus_master_write_Func st_uart_master_write;
@@ -13,6 +14,7 @@ static function_table const functionArray[ST_UART_DRIVER_CALL] = {
 typedef struct st_uart
 {
 	st_bus bus;
+	struct usart_async_descriptor *uart_async;
 }st_uart;
 
 static st_uart st_uart_instance[ST_UART_COUNT] = {
